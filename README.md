@@ -3,7 +3,7 @@
 ##Git usage
 git init        
 git add .       
-git commit -m "adding files"  
+git commit -m "adding files"  / 처음 commit 할 시 git commit -m "First commit"
 git remote add origin 주소/이름/파일    
 git push origin master  
 
