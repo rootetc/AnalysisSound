@@ -1,13 +1,15 @@
 # AnalysisSound
-음악 검색 프로그램
+
+## 음악 검색 프로그램
 
 사용언어: MATLAB
 
 참고 자료: https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjyjefs-4jNAhVF6aYKHSCkAkcQFggfMAA&url=https%3A%2F%2Fwikis.utexas.edu%2Fdownload%2Fattachments%2F3736533%2Fismir2002.pdf&usg=AFQjCNGjFMuRGASBAz7ycIVAB-LuD5ZTpw&sig2=3gXmr6chwtoZPtfHe6CEOA&bvm=bv.123325700,d.dGo&cad=rja
 http://coding-geek.com/how-shazam-works/
 
-                                                key값을 bit를 사용하여 음악검색 수행
-hash table DB 생성 알고리즘
+##key값을 bit를 사용하여 음악검색 수행
+
+###hash table DB 생성 알고리즘
 
 1. 모든 음악파일을 주파수 측으로 변환.
 2. 모든 음악에서 특징적인 키 값을 추출 하기 위하여 hamming window의 길이는 2048, overlapping은 31/32로 설정
@@ -19,7 +21,7 @@ hash table DB 생성 알고리즘
 chained hash table의 구조를 사용하여 중복 처리 수행.
 
 
-Music Search 알고리즘
+###Music Search 알고리즘
 
 1. 짧은 구간의 노래를 설정
 ---> 짧은 녹음구간과 5~6번의 녹음을 통해 frame동기화의 성능을 높일 수 있다.
@@ -33,8 +35,8 @@ Music Search 알고리즘
 ex) 1000 --> 1 bit의 error correction 0000, 1100, 1010, 1001....
 1,2,3,4...bit 차이를 test한 결과 2bit차이의 correction이 정확도와 속도측면에서 가장 좋은 결과를 나타냈다.
 
-memory 사용 계선 방법
-                      <heap을 사용한다>
+###memory 사용 계선 방법
+
 녹음된 노래에서 추출된 피쳐값들로 Hash table에서 해당 list들이 선택된다.
 선택된 list들 갯수만큼 heap을 만들고 heapify를 한다.
 pop을 하며 카운팅을 하고 Threshold를 설정하여 버리거나 저장한다.
@@ -42,8 +44,7 @@ pop을 하며 카운팅을 하고 Threshold를 설정하여 버리거나 저장�
 저장을 한다면 저장한 것들을 가지고 다시 추려내야한다.
 -----> 하지만 matlab의 상황에서는 더 안좋은 결과를 나타냈다.
 
-
-                                                    shazam 알고리즘
+##shazam 알고리즘
 
 1. Spectrogram 만들기(MATLAB 함수 이용, spectrogram)
 
