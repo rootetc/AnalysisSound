@@ -6,6 +6,7 @@
 참고 자료: https://www.google.co.kr/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0ahUKEwjyjefs-4jNAhVF6aYKHSCkAkcQFggfMAA&url=https%3A%2F%2Fwikis.utexas.edu%2Fdownload%2Fattachments%2F3736533%2Fismir2002.pdf&usg=AFQjCNGjFMuRGASBAz7ycIVAB-LuD5ZTpw&sig2=3gXmr6chwtoZPtfHe6CEOA&bvm=bv.123325700,d.dGo&cad=rja
 
 hash table DB 생성 알고리즘
+
 1. 모든 음악파일을 주파수 측으로 변환.
 2. 모든 음악에서 특징적인 키 값을 추출 하기 위하여 hamming window의 길이는 2048, overlapping은 31/32로 설정
 (overlapping을 높게 하여 구간들간의 coherence를 높여 노이즈를 제거하는 방식)
@@ -16,7 +17,8 @@ hash table DB 생성 알고리즘
 chained hash table의 구조를 사용하여 중복 처리 수행.
 
 
-검색 알고리즘
+Music Search 알고리즘
+
 1. 짧은 구간의 노래를 설정
 ---> 짧은 녹음구간과 5~6번의 녹음을 통해 frame동기화의 성능을 높일 수 있다.
 2. hash table DB알고리즘의 1~4번 수행을 통해 key값 추출
