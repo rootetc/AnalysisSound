@@ -45,12 +45,18 @@ pop을 하며 카운팅을 하고 Threshold를 설정하여 버리거나 저장�
 
 <shazam 알고리즘>
 1. Spectrogram 만들기(MATLAB 함수 이용, spectrogram)
+
 2. SPectrogram에서 local peak값 추출
  -1) loc scale로 freq를 나눈다.(6 band로 나눔)
+ 
  -2) 각 band에서 MAX 값을 구한다.
+ 
  -3) 각 밴드별로 MAX의 평균을 구한다.
+ 
  -4) 밴드 별로 평균보다 큰 값만 취한다.
+
 3. 각 peak값의 시간 Index와 freq Index를 이용한다.(의문생김, index를 이용하면 세밀하지 못하다)
+
 4. 구해진 2 colum table에서 feature(f1,f2,delta t)를 만든다.
  -1) circshift이용해서 shift시키면서 구한다.
  (f1,f2,delta t)를 1개의 int값으로 변환한다.
