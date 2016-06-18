@@ -75,6 +75,3 @@ pop을 하며 카운팅을 하고 Threshold를 설정하여 버리거나 저장�
 6. file fomat은 첫번째 줄에 노래제목 그 다음 줄 부터는 feature
 
 ----> 노이즈가 발생하였을 시 correction을 하여 검색하는 방법이 모호하다.
-
-##RESULT
-![Alt text](C:\Users\Administrator\Desktop\4학년 1학기\자료구조\termproject\result.jpg?raw=true "Optional Title")
