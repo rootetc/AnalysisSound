@@ -44,6 +44,7 @@ pop을 하며 카운팅을 하고 Threshold를 설정하여 버리거나 저장�
 
 
 <shazam 알고리즘>
+
 1. Spectrogram 만들기(MATLAB 함수 이용, spectrogram)
 
 2. SPectrogram에서 local peak값 추출
